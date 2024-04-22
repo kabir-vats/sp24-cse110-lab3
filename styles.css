@@ -10,10 +10,13 @@ body {
 /*Types*/
 h1 {
     color: rgb(43, 43, 156);
+    text-align:center;
+    text-decoration: underline overline blue;
 }
 
 h2 {
     color: #3e73be;
+    text-align:center;
 }
 
 h3 {
@@ -56,6 +59,7 @@ a {
 
 #warning {
     color: hsl(0, 84%, 35%);
+    text-align:center;
 }
 
 
