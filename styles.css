@@ -1,0 +1,33 @@
+body {
+    background-color: #c8d5e7;
+}
+
+/*Types*/
+h1 {
+    color: rgb(43, 43, 156);
+}
+
+h2 {
+    color: #3e73be;
+}
+
+h3 {
+    color:darkslateblue;
+}
+
+
+a {
+    color: color(display-p3 0.082 0.3 0.3 / 1);
+}
+
+/*labels*/
+
+#warning {
+    color: hsl(0, 84%, 35%);
+}
+
+
+/*Sections*/
+
+
+
