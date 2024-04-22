@@ -36,7 +36,6 @@ a {
     color: color(display-p3 0.082 0.3 0.3 / 1);
 }
 
-
 .announcements div {
     padding-left: 2%;
     padding-right: 0%;
@@ -51,13 +50,11 @@ a {
 .discussion li {
     margin-bottom: 5px;
 }
-
 /*labels*/
 
 #warning {
     color: hsl(0, 84%, 35%);
 }
-
 
 .title {
     max-width: fit-content;
