@@ -1,10 +1,29 @@
+
+
 body {
-    background-color: #c8d5e7;
+    --default-bg:#c8d5e7;
+    background-color: var(--default-bg, #c8d5e7);
     border: 1pc ridge paleturquoise;
     margin-left:1cm; 
     margin-right:1cm;
     margin-top:1cm;
     margin-bottom:1cm;
+}
+
+nav div{
+    display: inline;
+    text-align: center;
+}
+
+nav {
+    max-width:fit-content;
+    padding-left:auto;
+    padding-right:auto;
+    text-align: center;
+}
+
+span ~ span {
+    padding-left:20px;
 }
 
 /*Types*/
@@ -27,12 +46,14 @@ img {
     border-color:cornflowerblue;
     border-style:dashed;
     border-width:0.5em;
+    width:200px;
 }
 
 video {
     border-color:cornflowerblue;
     border-style:double;
     border-width:0.6rem;
+    height: 200px;
 }
 
 a {
@@ -49,11 +70,29 @@ a {
 
 .announcements > ul > li{
     padding: 10px 10px 10px 10px;
+    min-width: none;
 }
 
 .discussion li {
     margin-bottom: 5px;
 }
+
+.attendance {
+    max-width: fit-content;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article + article > ol{
+    padding-top: 2.5in;
+}
+
+.attendance article {
+    display: inline-block;
+}
+
 
 /*labels*/
 
@@ -69,10 +108,17 @@ a {
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+    position:sticky;
+    top:0;
 }
 
 #action {
     margin: 0in 1in 0in 1in;
+}
+
+#updates {
+    position:relative;
+    top: 15px;
 }
 
 
