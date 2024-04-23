@@ -57,7 +57,7 @@ video {
 }
 
 a {
-    color: color(display-p3 0.082 0.3 0.3);
+    color: color(sRGB 0.082 0.3 0.3);
 }   
 
 
