@@ -9,20 +9,21 @@ body {
     margin-bottom:1cm;
 }
 
-nav div{
-    display: inline;
-    text-align: center;
-}
 
 nav {
     max-width:fit-content;
-    padding-left:auto;
-    padding-right:auto;
     text-align: center;
+    & div {
+        display: inline;
+        & span:has(+span) {
+            padding-right:30px;
+            padding-left:20px;
+        }
+    }
 }
 
 span ~ span {
-    padding-left:20px;
+    padding-left:30px;
 }
 
 /*Types*/
@@ -56,8 +57,8 @@ video {
 }
 
 a {
-    color: color(display-p3 0.082 0.3 0.3 / 1);
-}
+    color: color(sRGB 0.082 0.3 0.3);
+}   
 
 
 .announcements div {
@@ -65,18 +66,18 @@ a {
     padding-right: 0%;
     padding-top: 2%;
     padding-bottom: 2%;
+    min-width: auto;
 }
 
 .announcements > ul > li{
     padding: 10px 10px 10px 10px;
-    min-width: none;
 }
 
 .discussion li {
     margin-bottom: 5px;
 }
 
-.attendance {
+section.attendance {
     max-width: fit-content;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -141,7 +142,8 @@ a[href="https://www.atsdr.cdc.gov/asbestos/health_effects_asbestos.html"]:active
     border-style: solid;
     border-width:3px;
 }
-/*Sections*/
+
+
 @media (width > 4in) {
 #disc {
     display:grid;
