@@ -1,4 +1,6 @@
 
+/*main body background color, border and margins*/
+/*uses variable with same fallback haha*/
 body {
     --default-bg:#c8d5e7;
     background-color: var(--default-bg, #c8d5e7);
@@ -9,7 +11,7 @@ body {
     margin-bottom:1cm;
 }
 
-
+/*some styling for navigation to be inline instead of listed*/
 nav {
     max-width:fit-content;
     text-align: center;
@@ -22,45 +24,53 @@ nav {
     }
 }
 
+/*Uses sibling relationship to style padding*/
 span ~ span {
     padding-left:30px;
 }
 
-/*Types*/
+/*Site main header color styling & decoration*/
 h1 {
     color: rgb(43, 43, 156);
     text-align:center;
     text-decoration: underline overline blue;
 }
 
+/*Subheading coloring and alignment*/
 h2 {
     color: #3e73be;
     text-align:center;
 }
 
+/*Large text coloring*/
 h3 {
     color:darkslateblue;
 }
 
+/*Image styling (giving border and size)*/
 img {
     border-color:cornflowerblue;
     border-style:dashed;
+    /*Relative unit*/
     border-width:0.5em;
     width:200px;
 }
 
+/*Video styling (giving border and size)*/
 video {
     border-color:cornflowerblue;
     border-style:double;
+    /*Relative unit*/
     border-width:0.6rem;
     height: 200px;
 }
 
+/*Link coloring using wider-gamut*/
 a {
     color: color(sRGB 0.082 0.3 0.3);
 }   
 
-
+/*Child selector with relative padding*/
 .announcements div {
     padding-left: 2%;
     padding-right: 0%;
@@ -69,14 +79,17 @@ a {
     min-width: auto;
 }
 
+/*Immediate child selector padding*/
 .announcements > ul > li{
     padding: 10px 10px 10px 10px;
 }
 
+/*li styling adding spacing for ease of reading*/
 .discussion li {
     margin-bottom: 5px;
 }
 
+/*element.class selector, using margins and max-width*/
 section.attendance {
     max-width: fit-content;
     margin-top: 20px;
@@ -85,23 +98,23 @@ section.attendance {
     margin-right: auto;
 }
 
+/*Sibling + child selector to set padding in attendance section*/
 article + article > ol{
     padding-top: 2.5in;
 }
 
+/*Child selector to set inline block*/
 .attendance article {
     display: inline-block;
 }
 
-
-/*labels*/
-
+/*Id selector to set the color for the warning*/
 #warning {
     color: hsl(0, 84%, 35%);
     text-align:center;
 }
 
-
+/*Class selector to set title dimensions, center title and make sticky*/
 .title {
     max-width: fit-content;
     margin-top: 20px;
@@ -112,23 +125,28 @@ article + article > ol{
     top:0;
 }
 
+/*id selector to set margins using unit inches*/
 #action {
     margin: 0in 1in 0in 1in;
 }
 
+/*id selector to set position, offset 15px*/
 #updates {
     position:relative;
     top: 15px;
 }
 
+/*Hover changer for details sections*/
 details:hover {
     color:red;
 }
 
+/*active selector to change clicked links*/
 a[href="https://www.atsdr.cdc.gov/asbestos/health_effects_asbestos.html"]:active {
     text-decoration: wavy green overline underline;
 }
 
+/*Changes goal selector to flex display*/
 #goals {
     display:flex;
     flex-direction:column;
@@ -136,6 +154,7 @@ a[href="https://www.atsdr.cdc.gov/asbestos/health_effects_asbestos.html"]:active
     align-items: center;
 }
 
+/*Sets spacing for divs within goals and disc*/
 #goals div, #disc div {
     padding: 10px 10px 10px 10px;
     border-color:black; 
@@ -143,16 +162,17 @@ a[href="https://www.atsdr.cdc.gov/asbestos/health_effects_asbestos.html"]:active
     border-width:3px;
 }
 
-
+/*media call to disable grid layout on thin devices*/
 @media (width > 4in) {
-#disc {
-    display:grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-       "first second"
-       "third fourth";
-}
+    /*Grid layout 2x2*/
+    #disc {
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "first second"
+        "third fourth";
+    }
 }
 
 
