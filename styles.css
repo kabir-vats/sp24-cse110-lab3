@@ -1,15 +1,17 @@
-
+* {
+   & body {
+        --default-bg:#c8d5e7;
+        background-color: var(--default-bg, #c8d5e7);
+        border: 1pc ridge paleturquoise;
+        margin-left:1cm; 
+        margin-right:1cm;
+        margin-top:1cm;
+        margin-bottom:1cm;
+    }  
+}
 /*main body background color, border and margins*/
 /*uses variable with same fallback haha*/
-body {
-    --default-bg:#c8d5e7;
-    background-color: var(--default-bg, #c8d5e7);
-    border: 1pc ridge paleturquoise;
-    margin-left:1cm; 
-    margin-right:1cm;
-    margin-top:1cm;
-    margin-bottom:1cm;
-}
+
 
 /*some styling for navigation to be inline instead of listed*/
 nav {
